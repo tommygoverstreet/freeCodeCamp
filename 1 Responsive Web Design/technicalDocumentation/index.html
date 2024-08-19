@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+ <head>
+  <meta charset="UTF-8">
+  <meta
+   name="viewport"
+   content="width=device-width, initial-scale=1.0"
+  >
+  <title>Technical Documentation</title>
+  <!-- Font Awesome -->
+  <link
+   rel="stylesheet"
+   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+  >
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css">
+ </head>
+
+ <body>
+
+  <header id="main-header">
+   <i id="nav_toggle" class="fas fa-code"></i>
+   <h1>Technical Documentation</h1>
+   <i id="toggle_nav" class="fas fa-bars"></i>
+  </header>
+
+  <nav id="navbar">
+   <header>Table of Contents</header>
+   <ul id="nav_list">
+    <li class="nav-item">
+     <a href="#introduction" class="nav-link">Introduction</a>
+    </li>
+    <li class="nav-item">
+     <a href="#html" class="nav-link">HTML</a>
+    </li>
+    <li class="nav-item">
+     <a href="#css" class="nav-link">CSS</a>
+    </li>
+    <li class="nav-item">
+     <a href="#javascript" class="nav-link">JavaScript</a>
+    </li>
+    <li class="nav-item">
+     <a href="#json" class="nav-link">JSON</a>
+    </li>
+    <li class="nav-item">
+     <a href="#projects" class="nav-link">Projects</a>
+   </ul>
+  </nav>
+
+  <div class="container">
+  <main id="main-doc">
+   <section class="main-section" id="introduction">
+    <header>Introduction</header>
+    <p>
+     This is a technical documentation page for web development. It contains information on HTML, CSS, JavaScript, and Python.
+    </p>
+
+    <div class="dashboard">
+     <div class="card">
+      <h3>HTML Elements</h3>
+      <p id="count-html">0</p>
+      <button
+       type="button"
+       id="htmlBtn"
+      >View</button>
+     </div>
+
+      <div class="card">
+       <h3>ID Elements</h3>
+       <p id="count-id">0</p>
+       <button type="button" id="idsBtn">View</button>
+      </div>
+
+       <div class="card">
+        <h3>Unique Classes</h3>
+        <p id="count-classes">0</p>
+        <button
+         type="button"
+         id="classesBtn"
+        >View</button>
+       </div>
+    </div>
+
+    <pre><code id="dashboard_output"></code></pre>
+   </section>
+
+   <section class="main-section" id="html">
+    <header class="section-header">HTML</header>
+   <article id="html_components">
+    <ul>
+     <li>
+      <header>HTML Elements</header>
+      <p>
+       HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects, such as interactive forms, may be embedded into the rendered page.
+      </p>
+     </li>
+     <li>
+      <header>HTML Attributes</header>
+      <p>
+       HTML attributes provide additional information about HTML elements. Attributes take the form of an opening tag and additional info is placed inside.
+      </p>
+     </li>
+     <li>
+      <header>HTML Headings</header>
+      <p>
+       HTML headings are titles or subtitles that you want to display on a webpage. There are six levels of headings, from h1 to h6.
+      </p>
+     </li>
+     <li>
+      <header>HTML Paragraphs</header>
+      <p>
+       HTML paragraphs are defined with the p tag. They are used to define a block of text that should be written as a paragraph.
+      </p>
+     </li>
+     <li>
+      <header>HTML Links</header>
+      <p>
+       HTML links are defined with the a tag. The link's destination is specified in the href attribute.
+      </p>
+     </li>
+     <li>
+      <header>HTML Images</header>
+      <p>
+       HTML images are defined with the img tag. The source file is specified in the src attribute.
+      </p>
+     </li>
+     <li>
+      <header>HTML Lists</header>
+      <p>
+       HTML lists are defined with the ul, ol, and li tags. The ul tag creates an unordered list, the ol tag creates an ordered list, and the li tag creates a list item.
+      </p>
+     </li>
+    </ul>
+   </article>
+   <article id="html_code_samples">
+    <header>HTML Code Samples</header>
+    <p>
+     Here are some code samples for HTML elements:
+    </p>
+    <pre>
+     <code>
+      &lt;h1&gt;This is a heading&lt;/h1&gt;
+      &lt;p&gt;This is a paragraph&lt;/p&gt;
+      &lt;a href="https://www.example.com"&gt;This is a link&lt;/a&gt;
+     </code>
+    </pre>
+   </article>
+   </section>
+
+   <section class="main-section" id="css">
+    <header class="section-header">CSS</header>
+    <article id="css_components">
+     <ul>
+      <li>
+       <header>CSS Selectors</header>
+       <p>
+        CSS selectors are used to "find" (or select) the HTML elements you want to style. We can divide CSS selectors into five categories: Simple selectors, Combinator selectors, Pseudo-class selectors, Pseudo-element selectors, and Attribute selectors.
+       </p>
+      </li>
+      <li>
+       <header>CSS Properties</header>
+       <p>
+        CSS properties are used to specify the style of an element, such as color, font, size, and more. A property is a pair of a key and a value.
+       </p>
+      </li>
+      <li>
+       <header>CSS Values</header>
+       <p>
+        CSS values are set against properties and are either keywords or numerical values. There are different types of values, such as color values, length values, percentage values, etc.
+       </p>
+      </li>
+      <li>
+       <header>CSS Syntax</header>
+       <p>
+        A CSS rule-set consists of a selector and a declaration block. The declaration block contains one or more declarations separated by semicolons.
+       </p>
+      </li>
+     </ul>
+    </article>
+    <article id="css_code_samples">
+     <header>CSS Code Samples</header>
+     <p>
+      Here are some code samples for CSS styling:
+     </p>
+     <pre>
+      <code>
+       h1 {
+        color: blue;
+        font-size: 26px;
+       }
+       p {
+        color: green;
+       }
+      </code>
+     </pre>
+    </article>
+   </section>
+
+   <section class="main-section" id="javascript">
+    <header class="section-header">JavaScript</header>
+    <article id="javascript_components">
+     <ul>
+      <li>
+       <header>JavaScript Variables</header>
+       <p>
+        JavaScript variables are containers for storing data values. You can think of them as symbolic names for values.
+       </p>
+      </li>
+      <li>
+       <header>JavaScript Operators</header>
+       <p>
+        JavaScript operators are used to assign values, compare values, perform arithmetic operations, and more.
+       </p>
+      </li>
+      <li>
+       <header>JavaScript Functions</header>
+       <p>
+        JavaScript functions are blocks of code that can be defined once and executed whenever needed.
+       </p>
+      </li>
+      <li>
+       <header>JavaScript Objects</header>
+       <p>
+        JavaScript objects are containers for named values called properties or methods.
+       </p>
+      </li>
+     </ul>
+    </article>
+    <article id="javascript_code_samples">
+     <header>JavaScript Code Samples</header>
+     <p>
+      Here are some code samples for JavaScript functions:
+     </p>
+     <pre>
+      <code>
+       function greet(name) {
+        return "Hello, " + name + "!";
+       }
+       console.log(greet("World"));
+      </code>
+     </pre>
+    </article>
+   </section>
+
+   <section class="main-section" id="json">
+    <header class="section-header">JSON</header>
+    <article id="json_components">
+     <ul>
+      <li>
+       <header>JSON Syntax</header>
+       <p>
+        JSON syntax is derived from JavaScript object notation syntax, but it is entirely text-based. JSON exists as a string, and it needs to be converted to a JavaScript object when it is received.
+       </p>
+      </li>
+      <li>
+       <header>JSON Data Types</header>
+       <p>
+        JSON data types are used to define the type of data that can be stored in a JSON object. There are six data types in JSON: string, number, object, array, boolean, and null.
+       </p>
+      </li>
+      <li>
+       <header>JSON Objects</header>
+       <p>
+        JSON objects are written in key/value pairs. Keys must be strings, and values must be a valid JSON data type (string, number, object, array, boolean, or null).
+       </p>
+      </li>
+      <li>
+       <header>JSON Arrays</header>
+       <p>
+        JSON arrays are written in square brackets and can contain multiple objects separated by commas.
+       </p>
+      </li>
+     </ul>
+    </article>
+    <article id="json_code_samples">
+     <header>JSON Code Samples</header>
+     <p>
+      Here are some code samples for JSON objects:
+     </p>
+     <pre>
+      <code>
+       {
+        "name": "John",
+        "age": 30,
+        "city": "New York"
+       }
+      </code>
+     </pre>
+    </article>
+   </section>
+
+   <section class="main-section" id="projects">
+    <header class="section-header">Projects</header>
+    <article id="project1">
+     <header>Survey</header>
+     <p>
+      This is a survey form that collects user data using HTML and CSS.
+     </p>
+    </article>
+    <article id="project2">
+     <header>Tribute Page</header>
+     <p>
+      This is a tribute page that displays information about inspiring topics using HTML and CSS.
+     </p>
+    </article>
+    <article id="project3">
+     <header>Technical Documentation</header>
+     <p>
+      This is a technical documentation page that provides information on web development using HTML, CSS, and JavaScript.
+     </p>
+    </article>
+
+   </section>
+
+
+
+  </main>
+  </div>
+  <script>
+   const toggleNav = document.getElementById('toggle_nav');
+   const navToggle = document.getElementById('nav_toggle');
+   const navbar = document.getElementById('navbar');
+   const mainDoc = document.getElementById('main-doc');
+
+   toggleNav.addEventListener('click', () => {
+   navbar.style.display = navbar.style.display === 'block' ? 'none' : 'block';
+   });
+   navToggle.addEventListener('click', () => {
+   navbar.style.display = navbar.style.display === 'block' ? 'none' : 'block';
+   });
+
+   // Close the navbar when a link is clicked
+   const navLinks = document.querySelectorAll('.nav-link');
+   navLinks.forEach(link => {
+   link.addEventListener('click', () => {
+    navbar.style.display = 'none';
+   });
+   });
+  </script>
+  <script src="script.js"></script>
+ </body>
+
+</html>

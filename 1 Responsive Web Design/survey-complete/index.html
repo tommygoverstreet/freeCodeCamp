@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Survey Form</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+ <header>
+ <h1 id="title" class="h1 title-heading">Survey Form</h1>
+ <p id="description">Employee satisfaction survey.</p>
+ </header>
+ <main>
+ <form action="" id="survey-form">
+  <!----- Name ----->
+  <div class="form-group">
+  <label for="name" id="name-label">Name</label>
+<input type="text" id="name" name="name" class="form-control" placeholder="Enter your name..." required>
+  </div>
+  <!----- Email ----->
+  <div class="form-group">
+  <label for="email" id="email-label">Email</label>
+<input type="email" id="email" name="email" class="form-control" placeholder="someone@example.com" required>
+  </div>
+  <!----- Number ----->
+  <div class="form-group">
+  <label for="number" id="number-label">Age</label>
+<input type="number" id="number" name="age" min="18" max="100" class="form-control" placeholder="How young are you?" required>
+  </div>
+  <!----- Job Role ----->
+  <div class="form-group">
+  <label for="dropdown" id="dropdown-label">Job Role</label>
+   <select name="dropdown" id="dropdown">
+    <option value="frontend">Frontend Developer</option>
+    <option value="backend">Backend Developer</option>
+    <option value="fullstack">Fullstack Developer</option>
+    <option value="devops">DevOps Engineer</option>
+    <option value="qa">QA Engineer</option>
+    <option value="uiux">UI/UX Designer</option>
+    <option value="pm">Project Manager</option>
+    <option value="hr">HR Manager</option>
+    <option value="other">Other</option>
+   </select>
+  </div>
+  <!----- Radio Buttons ----->
+  <div class="form-group">
+  <label for="radio" id="radio-label">Would you recommend this company to a friend?</label>
+   <div class="radio">
+    <label>
+     <input type="radio" name="radio" value="definitely" checked>Definitely
+    </label>
+   </div>
+   <div class="radio">
+    <label>
+     <input type="radio" name="radio" value="maybe">Maybe
+    </label>
+   </div>
+   <div class="radio">
+    <label>
+     <input type="radio" name="radio" value="not-sure">Not sure
+    </label>
+   </div>
+  </div>
+  <!----- Checkbox ----->
+  <div class="form-group">
+  <label for="checkbox" id="checkbox-label">What do you like about the company?</label>
+   <div class="checkbox">
+    <label>
+     <input type="checkbox" name="checkbox" value="culture">Culture
+    </label>
+   </div>
+   <div class="checkbox">
+    <label>
+     <input type="checkbox" name="checkbox" value="benefits">Benefits
+    </label>
+   </div>
+   <div class="checkbox">
+    <label>
+     <input type="checkbox" name="checkbox" value="work-life-balance">Work-life balance
+    </label>
+   </div>
+   <div class="checkbox">
+    <label>
+     <input type="checkbox" name="checkbox" value="flexibility">Flexibility
+    </label>
+   </div>
+   <div class="checkbox">
+    <label>
+     <input type="checkbox" name="checkbox" value="other">Other
+    </label>
+   </div>
+  </div>
+  <!----- Textarea ----->
+  <div class="form-group">
+  <label for="comments" id="comments-label">Comments</label>
+   <textarea id="comments" name="comments" class="form-control" placeholder="Enter your comments here..."></textarea>
+  </div>
+  <!----- Submit ----->
+   <div class="btn-group">
+    <button type="submit" id="submit">Submit</button>
+   </div>
+ </form>
+ </main>
+ <footer>
+ <p>&copy; 2024 Tommy Overstreet | FreeCodeCamp Project</p>
+ </footer>
+</div>
+</body>
+</html>
